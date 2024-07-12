@@ -10,7 +10,7 @@ export function Home() {
     const [products, setProducts] = useState([]);
 
     const handleNavigate = () => {
-        navigation.navigate('checkout');
+        navigation.navigate('Cart');
       };
     
 
@@ -57,7 +57,7 @@ export function Home() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-        <View style={styles.header}>
+        {/*<View style={styles.header}>
             <Image style={styles.menuIcon} source={require('../assets/Menu.png')}/>
             <Image style={styles.logo} source={require('../assets/Logo.png')}/>
             <View style={styles.headerRight}>
@@ -67,7 +67,7 @@ export function Home() {
                 </TouchableOpacity>
                 
             </View>
-        </View>
+        </View>*/}
         <View style={styles.header}>
             <Text style={styles.heading}>OUR STORY</Text>
             <View style={styles.subheaderRight}>
